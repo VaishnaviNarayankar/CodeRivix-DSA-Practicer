@@ -1,0 +1,263 @@
+/* ---------- Basic ---------- */
+:root{
+  --bg: #0d1321;
+  --card: #0f1724;
+  --muted: #bfc6d8;
+  --accent: #7b6cff;
+  --white: #ffffff;
+}
+*{box-sizing:border-box}
+html,body{height:100%; margin:0; padding:0; font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background: linear-gradient(180deg,#081026 0%, #0d1321 100%); color:var(--white)}
+
+/* HERO BUTTON */
+.hero {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 4rem;   /* 64px */
+    font-weight: 800;
+    line-height: 1.2;
+    
+}
+
+.hero p {
+    font-size: 1.3rem;      /* Larger paragraph */
+    line-height: 1.7;
+    max-width: 1200px;       /* Keeps text readable */
+    margin-bottom: 1.5rem;
+}
+
+.hero a {
+    font-size: 1.2rem;      /* Bigger button text */
+    padding: 14px 32px;     /* Bigger button */
+    border-radius: 8px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.start-btn {
+  display: inline-block;
+  margin-top: 60px;
+  padding: 12px 30px;
+  background: #7a4bff;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.start-btn:hover {
+  background: #9b6aff;
+  transform: translateY(-3px);
+}
+
+
+/* ---------- NAVBAR ---------- */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 36px;
+  background: rgba(10,14,30,0.6);
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+  position: sticky;
+  top:0;
+  z-index:1000;
+}
+.logo{
+  font-weight:700;
+  color:var(--accent);
+  font-size:20px;
+}
+.nav-right{list-style:none; display:flex; gap:20px; margin:0; padding:0}
+.nav-right li a{color:var(--muted); text-decoration:none; font-weight:500}
+.nav-right li a:hover{color:var(--white)}
+
+/* ---------- FEATURES (4 non-clickable) ---------- */
+.features-heading {
+    text-align: center;
+    font-size: 50px;
+    color:var(--accent);
+    margin-top: 60px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.features{
+  display:grid;
+  grid-template-columns: repeat(2, 600px);
+  gap:18px;
+  max-width:1100px;
+  margin:28px auto;
+  padding:0 20px;
+  justify-content: center;
+  align-items: center;
+}
+.feature-card{
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(158, 44, 44, 0.04);
+  padding:28px;
+  border-radius:12px;
+  text-align:center;
+  min-height:110px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+.feature-title{font-size:18px; font-weight:600; color:var(--white)}
+.feature-desc{font-size:13px; color:var(--muted); margin-top:8px}
+
+/* ---------- TOPICS GRID (clickable cards) ---------- */
+.topics-section{max-width:1200px; margin:18px auto 6px; padding:0 20px}
+.section-heading{text-align:center; margin:50px 50px 50px; font-size: 50px; color:var(--accent)}
+
+.topics-grid{
+  display:grid;
+  grid-template-columns: repeat(3, minmax(300px,1fr));
+  gap:16px;
+  margin-top:10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.topic-card{
+  background: linear-gradient(135deg, rgba(123,108,255,0.15), rgba(123,108,255,0.06));
+  border:1px solid rgba(123,108,255,0.12);
+  color:var(--white);
+  padding:18px;
+  border-radius:10px;
+  text-align:center;
+  font-weight:600;
+  cursor:pointer;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.topic-card:hover{ transform: translateY(-6px); box-shadow: 0 8px 30px rgba(123,108,255,0.12) }
+
+/* ---------- PROBLEMS TABLES ---------- */
+.tables-wrap{ max-width:1200px; margin:30px auto 80px; padding:0 20px }
+.problems-section{ display:none; margin-bottom:36px }
+.problems-section h3{ font-size:20px; margin-bottom:14px; color:var(--accent) }
+
+.problems-table{
+  width:100%;
+  border-collapse:collapse;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+  border-radius:8px;
+  overflow:hidden;
+}
+.problems-table thead tr{ background: rgba(255,255,255,0.03); }
+.problems-table th, .problems-table td{
+  padding:12px 14px;
+  text-align:left;
+  font-size:14px;
+  border-bottom:1px solid rgba(255,255,255,0.03);
+}
+.problems-table th{ font-weight:600; color:var(--muted); font-size:13px }
+
+/* link styles */
+.problems-table a{ color:#9fc6ff; text-decoration:none; font-weight:600 }
+.problems-table a:hover{ text-decoration:underline }
+
+/* difficulty styles */
+.easy{ color: #7ee787; font-weight:600 }
+.medium{ color: #ffb86b; font-weight:600 }
+.hard{ color: #ff6b81; font-weight:600 }
+
+/* youtube column */
+.yt a{ display:inline-block; padding:6px 10px; border-radius:6px; background:rgba(255,0,0,0.12); color:#ff4a4a; font-weight:700; text-decoration:none }
+.yt a:hover{ background:rgba(255,0,0,0.18) }
+
+.footer {
+  background: #0f172a;
+  color: #cbd5e1;
+  padding: 50px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+  max-width: 1300px;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 2fr repeat(4, 1fr);
+  gap: 40px;
+}
+
+.footer-logo {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  color: #94a3b8;
+  margin-right: 15px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
+
+.footer-col h3 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-col a {
+  display: block;
+  color: #94a3b8;
+  margin-bottom: 8px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer-col a:hover {
+  color: white;
+}
+
+.footer-disclaimer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 10px;
+  color: #94a3b8;
+}
+
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width:900px){
+  .features{ grid-template-columns: 1fr; padding:0 16px }
+  .topics-grid{ grid-template-columns: repeat(auto-fit, minmax(140px,1fr)) }
+  .nav-right{ display:none } /* keep navbar simple on small screens */
+  .section-heading{ font-size:18px }
+  .problems-table th, .problems-table td{ padding:10px 8px; font-size:13px }
+}

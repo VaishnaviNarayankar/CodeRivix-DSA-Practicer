@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CodeRivix DSA Practicer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <div class="logo">CodeRivix</div>
+    </div>
+    <ul class="nav-right">
+      <li><a href="#">Home</a></li>
+      <li><a href="#topics">Topics</a></li>
+      <li><a href="#">Company-wise</a></li>
+      <li><a href="#footer">Contact</a></li>
+    </ul>
+  </nav>
+
+    <!-- ================= HERO SECTION ================= -->
+  <section class="hero">
+    <div class="hero-center">
+      <section id="home">
+      <h1>Master Data Structures & Algorithms</h1>
+      </section>
+
+      <p>
+        Practice hand-picked problems across Arrays, Linked Lists, Trees, Graphs, and more. Strengthen your skills with challenges designed for beginners to advanced coders.
+      </p>
+
+      <a href="#topics" class="start-btn">Start Learning →</a>
+
+    </div>
+  </section>
+
+  <!-- 4 NON-CLICKABLE CARDS -->
+  <section id="features"></section>
+  <h1 class="features-heading">Key Features</h1>
+  
+  <section class="features">
+    
+    <div class="feature-card">
+      <div class="feature-title">Topic-Wise Problems</div>
+      <div class="feature-desc">Arrays, Strings, Linked List, Recursion, DP, Trees, Graphs,etc.</div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-title">Company-Wise Questions</div>
+      <div class="feature-desc">Google, Amazon, Microsoft, Meta, Netflix previously asked interview questions.</div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-title">Multiple Difficulty Levels</div>
+      <div class="feature-desc">Easy, Medium, Hard, Expert challenges for every topic.</div>
+    </div>
+    
+    <div class="feature-card">
+      <div class="feature-title">Daily Challenge</div>
+      <div class="feature-desc">One new coding problem every day.</div>
+    </div>
+    
+  </section>
+
+  <!-- CLICKABLE TOPIC CARDS -->
+  <section id="topics"></section>
+  <section class="topics-section" id="topics">
+    
+
+
+    <h1 class="section-heading">Choose a Topic</h1>
+
+    <div class="topics-grid">
+      <div class="topic-card" onclick="showTopic('arrays')">Arrays</div>
+      <div class="topic-card" onclick="showTopic('strings')">Strings</div>
+      <div class="topic-card" onclick="showTopic('linkedlist')">Linked List</div>
+      <div class="topic-card" onclick="showTopic('stack')">Stack</div>
+      <div class="topic-card" onclick="showTopic('queue')">Queue</div>
+      <div class="topic-card" onclick="showTopic('recursion')">Recursion & Backtracking</div>
+      <div class="topic-card" onclick="showTopic('binarysearch')">Binary Search</div>
+      <div class="topic-card" onclick="showTopic('trees')">Trees</div>
+      <div class="topic-card" onclick="showTopic('graphs')">Graphs</div>
+      <div class="topic-card" onclick="showTopic('dp')">Dynamic Programming</div>
+      <div class="topic-card" onclick="showTopic('sliding')">Two Pointers / Sliding Window</div>
+    </div>
+  </section>
+
+  <!-- PROBLEM TABLES (one per topic). Hidden by default. -->
+  <main class="tables-wrap">
+
+    <!-- ARRAYS -->
+    <section id="arrays" class="problems-section">
+      <h3>Arrays — Sample Problems</h3>
+      <table class="problems-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Problem</th>
+            <th>Difficulty</th>
+            <th>Category</th>
+            <th>Solution</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><a href="https://leetcode.com/problems/two-sum/" target="_blank" rel="noopener">Two Sum</a></td>
+            <td class="easy">Easy</td>
+            <td>Array / Hashing</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=KLlXCFG5TnA" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/" target="_blank" rel="noopener">Best Time to Buy and Sell Stock</a></td>
+            <td class="easy">Easy</td>
+            <td>Array / Kadane</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=1pkOgXD63yU" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><a href="https://leetcode.com/problems/contains-duplicate/" target="_blank" rel="noopener">Contains Duplicate</a></td>
+            <td class="easy">Easy</td>
+            <td>Array / Hashing</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=bm5iL5P_wLk" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><a href="https://leetcode.com/problems/maximum-subarray/" target="_blank" rel="noopener">Maximum Subarray</a></td>
+            <td class="medium">Medium</td>
+            <td>Kadane / DP</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=5WZl3MMT0Eg" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><a href="https://leetcode.com/problems/product-of-array-except-self/" target="_blank" rel="noopener">Product of Array Except Self</a></td>
+            <td class="medium">Medium</td>
+            <td>Prefix/Suffix</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=q5a2XG0Jv5k" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td><a href="https://leetcode.com/problems/merge-intervals/" target="_blank" rel="noopener">Merge Intervals</a></td>
+            <td class="medium">Medium</td>
+            <td>Intervals / Sorting</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=44H3cEC2fFM" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td><a href="https://leetcode.com/problems/majority-element/" target="_blank" rel="noopener">Majority Element</a></td>
+            <td class="easy">Easy</td>
+            <td>Array / Voting</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=1jM6f7o1s2Y" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- STRINGS -->
+    <section id="strings" class="problems-section">
+      <h3>Strings — Sample Problems</h3>
+      <table class="problems-table">
+        <thead>
+          <tr>
+            <th>#</th><th>Problem</th><th>Difficulty</th><th>Category</th><th>Solution</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><a href="https://leetcode.com/problems/valid-anagram/" target="_blank" rel="noopener">Valid Anagram</a></td>
+            <td class="easy">Easy</td>
+            <td>Hashing / Strings</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=9hUoQ9N1Ojo" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><a href="https://leetcode.com/problems/valid-parentheses/" target="_blank" rel="noopener">Valid Parentheses</a></td>
+            <td class="easy">Easy</td>
+            <td>Stack / Strings</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=QZzG3-0bq1Y" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/" target="_blank" rel="noopener">Longest Substring Without Repeating Characters</a></td>
+            <td class="medium">Medium</td>
+            <td>Sliding Window</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=wiGpQwVHdE0" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><a href="https://leetcode.com/problems/longest-palindromic-substring/" target="_blank" rel="noopener">Longest Palindromic Substring</a></td>
+            <td class="medium">Medium</td>
+            <td>DP / Expand Around Center</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=3jd6mitaa1k" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><a href="https://leetcode.com/problems/group-anagrams/" target="_blank" rel="noopener">Group Anagrams</a></td>
+            <td class="medium">Medium</td>
+            <td>Hashing / Sorting</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=oGx0jYw2vxM" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td><a href="https://leetcode.com/problems/implement-strstr/" target="_blank" rel="noopener">Implement strStr()</a></td>
+            <td class="easy">Easy</td>
+            <td>String Matching</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=Jhmt2c4Hw9E" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td><a href="https://leetcode.com/problems/valid-palindrome/" target="_blank" rel="noopener">Valid Palindrome</a></td>
+            <td class="easy">Easy</td>
+            <td>Two Pointers</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=87JxAvqyYbU" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- LINKED LIST -->
+    <section id="linkedlist" class="problems-section">
+      <h3>Linked List — Sample Problems</h3>
+      <table class="problems-table">
+        <thead>
+          <tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Category</th><th>Solution</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><a href="https://leetcode.com/problems/reverse-linked-list/" target="_blank" rel="noopener">Reverse Linked List</a></td>
+            <td class="easy">Easy</td>
+            <td>LinkedList</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=G0_I-ZF0S38" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><a href="https://leetcode.com/problems/merge-two-sorted-lists/" target="_blank" rel="noopener">Merge Two Sorted Lists</a></td>
+            <td class="easy">Easy</td>
+            <td>LinkedList</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=RBSGKlAvoiM" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><a href="https://leetcode.com/problems/linked-list-cycle/" target="_blank" rel="noopener">Linked List Cycle</a></td>
+            <td class="easy">Easy</td>
+            <td>Two Pointers</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=6k7Nq9K5j0Y" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><a href="https://leetcode.com/problems/remove-nth-node-from-end-of-list/" target="_blank" rel="noopener">Remove Nth Node From End</a></td>
+            <td class="medium">Medium</td>
+            <td>Two Pointers</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=XIdigk956u0" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><a href="https://leetcode.com/problems/odd-even-linked-list/" target="_blank" rel="noopener">Odd Even Linked List</a></td>
+            <td class="medium">Medium</td>
+            <td>LinkedList</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=2GUnFZVg2YA" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td><a href="https://leetcode.com/problems/remove-duplicates-from-sorted-list/" target="_blank" rel="noopener">Remove Duplicates from Sorted List</a></td>
+            <td class="easy">Easy</td>
+            <td>LinkedList</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=4V6bKq2aUe8" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td><a href="https://leetcode.com/problems/intersection-of-two-linked-lists/" target="_blank" rel="noopener">Intersection of Two Linked Lists</a></td>
+            <td class="easy">Easy</td>
+            <td>LinkedList / Two Pointers</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=JfBM6Y4B3NU" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- STACK -->
+    <section id="stack" class="problems-section">
+      <h3>Stack — Sample Problems</h3>
+      <table class="problems-table">
+        <thead><tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Category</th><th>Solution</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><a href="https://leetcode.com/problems/valid-parentheses/" target="_blank" rel="noopener">Valid Parentheses</a></td>
+            <td class="easy">Easy</td>
+            <td>Stack</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=QZzG3-0bq1Y" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><a href="https://leetcode.com/problems/min-stack/" target="_blank" rel="noopener">Min Stack</a></td>
+            <td class="easy">Easy</td>
+            <td>Stack</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=qK1oE6w5d9k" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><a href="https://leetcode.com/problems/next-greater-element-i/" target="_blank" rel="noopener">Next Greater Element</a></td>
+            <td class="easy">Easy</td>
+            <td>Stack / Monotonic Stack</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=2r2BxJ0V2Ic" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><a href="https://leetcode.com/problems/daily-temperatures/" target="_blank" rel="noopener">Daily Temperatures</a></td>
+            <td class="medium">Medium</td>
+            <td>Stack / Monotonic</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=Qdul4XNJqHk" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><a href="https://leetcode.com/problems/evaluate-reverse-polish-notation/" target="_blank" rel="noopener">Evaluate Reverse Polish Notation</a></td>
+            <td class="medium">Medium</td>
+            <td>Stack</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=6zv_D7X8r7Y" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td><a href="https://leetcode.com/problems/implement-queue-using-stacks/" target="_blank" rel="noopener">Implement Queue using Stacks</a></td>
+            <td class="easy">Easy</td>
+            <td>Stack / Queue</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=G7rgD2h8lJg" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td><a href="https://leetcode.com/problems/largest-rectangle-in-histogram/" target="_blank" rel="noopener">Largest Rectangle in Histogram</a></td>
+            <td class="hard">Hard</td>
+            <td>Stack / Monotonic</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=ZmnqCZp9bBs" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- QUEUE -->
+    <section id="queue" class="problems-section">
+      <h3>Queue — Sample Problems</h3>
+      <table class="problems-table">
+        <thead><tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Category</th><th>Solution</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><a href="https://leetcode.com/problems/number-of-islands/" target="_blank" rel="noopener">Number of Islands</a></td>
+            <td class="medium">Medium</td>
+            <td>BFS / Grid</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=pVfj6mxhdMw" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><a href="https://leetcode.com/problems/sliding-window-maximum/" target="_blank" rel="noopener">Sliding Window Maximum</a></td>
+            <td class="hard">Hard</td>
+            <td>Deque / Monotonic Queue</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=R5h2hQ8Xod0" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><a href="https://leetcode.com/problems/moving-average-from-data-stream/" target="_blank" rel="noopener">Moving Average from Data Stream</a></td>
+            <td class="easy">Easy</td>
+            <td>Queue</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=6k2czxjGJ0g" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><a href="https://leetcode.com/problems/number-of-recent-calls/" target="_blank" rel="noopener">Number of Recent Calls</a></td>
+            <td class="easy">Easy</td>
+            <td>Queue</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=H5c5Q2r9D6I" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><a href="https://leetcode.com/problems/design-circular-queue/" target="_blank" rel="noopener">Design Circular Queue</a></td>
+            <td class="medium">Medium</td>
+            <td>Queue / Design</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=ALi3jF9YvP8" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td><a href="https://leetcode.com/problems/employee-free-time/" target="_blank" rel="noopener">Employee Free Time</a></td>
+            <td class="hard">Hard</td>
+            <td>Intervals</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=8B3z3G1XJb0" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td><a href="https://leetcode.com/problems/sliding-window-maximum/" target="_blank" rel="noopener">Max in Sliding Window (alternate)</a></td>
+            <td class="hard">Hard</td>
+            <td>Deque</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=R5h2hQ8Xod0" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- RECURSION & BACKTRACKING -->
+    <section id="recursion" class="problems-section">
+      <h3>Recursion & Backtracking — Sample Problems</h3>
+      <table class="problems-table">
+        <thead><tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Category</th><th>Solution</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><a href="https://leetcode.com/problems/subsets/" target="_blank" rel="noopener">Subsets</a></td>
+            <td class="easy">Easy</td>
+            <td>Backtracking</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=b7AYbp4kFQg" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><a href="https://leetcode.com/problems/permutations/" target="_blank" rel="noopener">Permutations</a></td>
+            <td class="medium">Medium</td>
+            <td>Backtracking</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=s7AvT7cGdSo" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><a href="https://leetcode.com/problems/combination-sum/" target="_blank" rel="noopener">Combination Sum</a></td>
+            <td class="medium">Medium</td>
+            <td>Backtracking</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=2c6YJ9nZMI8" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><a href="https://leetcode.com/problems/word-search/" target="_blank" rel="noopener">Word Search</a></td>
+            <td class="medium">Medium</td>
+            <td>DFS / Backtracking</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=1fiYya3P2pM" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><a href="https://leetcode.com/problems/n-queens/" target="_blank" rel="noopener">N-Queens</a></td>
+            <td class="hard">Hard</td>
+            <td>Backtracking</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=xouin83ebxE" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td><a href="https://leetcode.com/problems/combination-sum-ii/" target="_blank" rel="noopener">Combination Sum II</a></td>
+            <td class="medium">Medium</td>
+            <td>Backtracking</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=0p1aQn3r0LQ" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td><a href="https://leetcode.com/problems/restore-ip-addresses/" target="_blank" rel="noopener">Restore IP Addresses</a></td>
+            <td class="medium">Medium</td>
+            <td>Backtracking / DFS</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=KqJrI5bGk9E" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- BINARY SEARCH -->
+    <section id="binarysearch" class="problems-section">
+      <h3>Binary Search — Sample Problems</h3>
+      <table class="problems-table">
+        <thead><tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Category</th><th>Solution</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><a href="https://leetcode.com/problems/binary-search/" target="_blank" rel="noopener">Binary Search</a></td>
+            <td class="easy">Easy</td>
+            <td>Binary Search</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=P3YID7liBug" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><a href="https://leetcode.com/problems/search-in-rotated-sorted-array/" target="_blank" rel="noopener">Search in Rotated Sorted Array</a></td>
+            <td class="medium">Medium</td>
+            <td>Binary Search</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=U8XENwh8Oy8" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><a href="https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/" target="_blank" rel="noopener">Find First and Last Position</a></td>
+            <td class="medium">Medium</td>
+            <td>Binary Search</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=yeuY7s8vR5U" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><a href="https://leetcode.com/problems/median-of-two-sorted-arrays/" target="_blank" rel="noopener">Median of Two Sorted Arrays</a></td>
+            <td class="hard">Hard</td>
+            <td>Binary Search / Divide and Conquer</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=LPFhl65R7ww" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><a href="https://leetcode.com/problems/search-insert-position/" target="_blank" rel="noopener">Search Insert Position</a></td>
+            <td class="easy">Easy</td>
+            <td>Binary Search</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=9a1h2XgTgq4" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td><a href="https://leetcode.com/problems/search-a-2d-matrix/" target="_blank" rel="noopener">Search a 2D Matrix</a></td>
+            <td class="medium">Medium</td>
+            <td>Binary Search</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=Qe1bQ6qzE6A" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td><a href="https://leetcode.com/problems/find-peak-element/" target="_blank" rel="noopener">Find Peak Element</a></td>
+            <td class="medium">Medium</td>
+            <td>Binary Search / Math</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=ql8uuo9B2sw" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- TREES -->
+    <section id="trees" class="problems-section">
+      <h3>Trees — Sample Problems</h3>
+      <table class="problems-table">
+        <thead><tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Category</th><th>Solution</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><a href="https://leetcode.com/problems/invert-binary-tree/" target="_blank" rel="noopener">Invert Binary Tree</a></td>
+            <td class="easy">Easy</td>
+            <td>Tree / DFS</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=Z9O0mQfS3l4" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><a href="https://leetcode.com/problems/binary-tree-level-order-traversal/" target="_blank" rel="noopener">Binary Tree Level Order Traversal</a></td>
+            <td class="medium">Medium</td>
+            <td>BFS / Tree</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=6oL-0TdVy28" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><a href="https://leetcode.com/problems/maximum-depth-of-binary-tree/" target="_blank" rel="noopener">Maximum Depth of Binary Tree</a></td>
+            <td class="easy">Easy</td>
+            <td>Tree / DFS</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=Jae6Uu5U7Q0" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><a href="https://leetcode.com/problems/validate-binary-search-tree/" target="_blank" rel="noopener">Validate Binary Search Tree</a></td>
+            <td class="medium">Medium</td>
+            <td>Tree / DFS</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=s6ateyS1zfs" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><a href="https://leetcode.com/problems/binary-tree-maximum-path-sum/" target="_blank" rel="noopener">Binary Tree Maximum Path Sum</a></td>
+            <td class="hard">Hard</td>
+            <td>Tree / DFS / DP</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=4H3kzvXb3vA" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td><a href="https://leetcode.com/problems/flatten-binary-tree-to-linked-list/" target="_blank" rel="noopener">Flatten Binary Tree to Linked List</a></td>
+            <td class="medium">Medium</td>
+            <td>Tree / DFS</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=PlhV5v6oW0o" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td><a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/" target="_blank" rel="noopener">Lowest Common Ancestor</a></td>
+            <td class="medium">Medium</td>
+            <td>Tree / DFS</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=_Vw2pYf9Yzs" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- GRAPHS -->
+    <section id="graphs" class="problems-section">
+      <h3>Graphs — Sample Problems</h3>
+      <table class="problems-table">
+        <thead><tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Category</th><th>Solution</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><a href="https://leetcode.com/problems/number-of-islands/" target="_blank" rel="noopener">Number of Islands</a></td>
+            <td class="medium">Medium</td>
+            <td>Graph / DFS</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=pVfj6mxhdMw" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><a href="https://leetcode.com/problems/course-schedule/" target="_blank" rel="noopener">Course Schedule</a></td>
+            <td class="medium">Medium</td>
+            <td>Graph / Topological Sort</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=G3M9X7Yjv2E" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><a href="https://leetcode.com/problems/clone-graph/" target="_blank" rel="noopener">Clone Graph</a></td>
+            <td class="medium">Medium</td>
+            <td>Graph / BFS</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=3ehzG5g1f8g" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><a href="https://leetcode.com/problems/graph-valid-tree/" target="_blank" rel="noopener">Graph Valid Tree</a></td>
+            <td class="medium">Medium</td>
+            <td>Graph / DFS</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=8ZvC2CwOZ2s" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><a href="https://leetcode.com/problems/minimum-spanning-tree/" target="_blank" rel="noopener">Minimum Spanning Tree (concept)</a></td>
+            <td class="hard">Hard</td>
+            <td>Graph / MST</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=8ZlQyqv3wbc" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td><a href="https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/" target="_blank" rel="noopener">Count Connected Components</a></td>
+            <td class="medium">Medium</td>
+            <td>Graph / Union-Find</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=C_G3jD7k6hQ" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td><a href="https://leetcode.com/problems/network-delay-time/" target="_blank" rel="noopener">Network Delay Time</a></td>
+            <td class="medium">Medium</td>
+            <td>Graph / Dijkstra</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=K6H1m8vGkJ0" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- DYNAMIC PROGRAMMING -->
+    <section id="dp" class="problems-section">
+      <h3>Dynamic Programming — Sample Problems</h3>
+      <table class="problems-table">
+        <thead><tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Category</th><th>Solution</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><a href="https://leetcode.com/problems/climbing-stairs/" target="_blank" rel="noopener">Climbing Stairs</a></td>
+            <td class="easy">Easy</td>
+            <td>DP / Fibonacci</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=Y0lT9Fck7qI" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><a href="https://leetcode.com/problems/house-robber/" target="_blank" rel="noopener">House Robber</a></td>
+            <td class="medium">Medium</td>
+            <td>DP</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=73r3KWiEvyg" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><a href="https://leetcode.com/problems/coin-change/" target="_blank" rel="noopener">Coin Change</a></td>
+            <td class="medium">Medium</td>
+            <td>DP / Knapsack</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=jgiZlGzXMBw" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><a href="https://leetcode.com/problems/longest-increasing-subsequence/" target="_blank" rel="noopener">Longest Increasing Subsequence</a></td>
+            <td class="medium">Medium</td>
+            <td>DP / Binary Search</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=CE2b_-XfVDk" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><a href="https://leetcode.com/problems/maximum-subarray/" target="_blank" rel="noopener">Maximum Subarray</a></td>
+            <td class="medium">Medium</td>
+            <td>DP / Kadane</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=5WZl3MMT0Eg" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td><a href="https://leetcode.com/problems/word-break/" target="_blank" rel="noopener">Word Break</a></td>
+            <td class="medium">Medium</td>
+            <td>DP / String</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=dpwI3Jb1GL4" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td><a href="https://leetcode.com/problems/house-robber-ii/" target="_blank" rel="noopener">House Robber II</a></td>
+            <td class="medium">Medium</td>
+            <td>DP</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=QMh3o3G6ltA" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- SLIDING WINDOW / TWO POINTERS -->
+    <section id="sliding" class="problems-section">
+      <h3>Two Pointers / Sliding Window — Sample Problems</h3>
+      <table class="problems-table">
+        <thead><tr><th>#</th><th>Problem</th><th>Difficulty</th><th>Category</th><th>Solution</th></tr></thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><a href="https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/" target="_blank" rel="noopener">Two Sum II - Input array is sorted</a></td>
+            <td class="easy">Easy</td>
+            <td>Two Pointers</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=KLlXCFG5TnA" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><a href="https://leetcode.com/problems/container-with-most-water/" target="_blank" rel="noopener">Container With Most Water</a></td>
+            <td class="medium">Medium</td>
+            <td>Two Pointers</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=U1i6e3s7i4M" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><a href="https://leetcode.com/problems/3sum/" target="_blank" rel="noopener">3Sum</a></td>
+            <td class="medium">Medium</td>
+            <td>Two Pointers / Sorting</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=EW3rj8kGd9c" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><a href="https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters/" target="_blank" rel="noopener">Longest Substring with At Most K Distinct Characters</a></td>
+            <td class="medium">Medium</td>
+            <td>Sliding Window</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=LwJdNfdRF9w" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><a href="https://leetcode.com/problems/fruit-into-baskets/" target="_blank" rel="noopener">Fruit Into Baskets</a></td>
+            <td class="medium">Medium</td>
+            <td>Sliding Window</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=U6IHxY-K4Yg" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td><a href="https://leetcode.com/problems/minimum-size-subarray-sum/" target="_blank" rel="noopener">Minimum Size Subarray Sum</a></td>
+            <td class="medium">Medium</td>
+            <td>Sliding Window</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=3PV4sUnuWm0" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td><a href="https://leetcode.com/problems/valid-palindrome/" target="_blank" rel="noopener">Valid Palindrome</a></td>
+            <td class="easy">Easy</td>
+            <td>Two Pointers</td>
+            <td class="yt"><a href="https://www.youtube.com/watch?v=87JxAvqyYbU" target="_blank" rel="noopener">▶</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer class="footer">
+  <div class="footer-container">
+
+    <!-- Left Section -->
+    <div class="footer-left">
+      <h2 class="footer-logo">DSA Learning</h2>
+      <p class="footer-desc">
+        Solve, Learn, and Master Data Structures & Algorithms.
+      </p>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <a href="#">Home</a>
+      <a href="#topics">Topics</a>
+      <a href="#features">Features</a>
+      <a href="#">Company-Wise</a>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-col" id="footer">
+      <h3>Get in Touch</h3>
+      <h4>vaishnavinarayankar2@gmail.com</h4>
+      
+      <h4>Free learning resources</h4>
+    </div>
+  </div>
+
+  <p class="footer-disclaimer">
+    Disclaimer: Company tags are collected from publicly available community 
+    resources and are for educational use only. Not affiliated with or endorsed by any company.
+  </p>
+
+  <p class="footer-bottom">
+    © 2025 CodeRivix
+  </p>
+</footer>
+
+  </main>
+
+  <script>
+    // Hide all sections initially
+    document.querySelectorAll('.problems-section').forEach(s => s.style.display = 'none');
+
+    function showTopic(id) {
+      // hide all
+      document.querySelectorAll('.problems-section').forEach(s => s.style.display = 'none');
+      // show the requested
+      const el = document.getElementById(id);
+      if (!el) return;
+      el.style.display = 'block';
+      // scroll into view with offset so heading not under navbar
+      const y = el.getBoundingClientRect().top + window.pageYOffset - 90;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
