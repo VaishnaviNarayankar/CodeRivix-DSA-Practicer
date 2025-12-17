@@ -50,4 +50,5 @@ https://vaishnavinarayankar.github.io/CodeRivix-DSA-Practicer/
 
 <h2>📂 Project Structure</h2>
 ├── index.html
+
 ├── style.css
