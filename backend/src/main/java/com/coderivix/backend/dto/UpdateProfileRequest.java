@@ -1,0 +1,26 @@
+package com.coderivix.backend.dto;
+
+public class UpdateProfileRequest {
+
+    private String name;
+    private String password;
+
+    public UpdateProfileRequest() {
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+}
