@@ -1,0 +1,419 @@
+/* ================= NAVBAR ================= */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 60px;
+
+  background: rgba(8, 16, 38, 0.95);
+  backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* ================= LOGO ================= */
+
+.logo a{
+  text-decoration:none;
+  color:white;
+  font-size:30px;
+  font-weight:800;
+}
+
+.logo span{
+  color:#7b6cff;
+}
+
+/* ================= NAVIGATION ================= */
+
+.nav-right{
+  display:flex;
+  align-items:center;
+  gap:35px;
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+.nav-right li{
+  position:relative;
+}
+
+.nav-right a{
+  text-decoration:none;
+  color:#d7dce7;
+  font-size:16px;
+  font-weight:500;
+  transition:.3s;
+}
+
+.nav-right a:hover{
+  color:#7b6cff;
+}
+
+/* ================= REGISTER BUTTON ================= */
+
+.register-nav-btn{
+
+  background:#7b6cff;
+  color:white !important;
+  padding:10px 22px;
+  border-radius:8px;
+  transition:.3s;
+
+}
+
+.register-nav-btn:hover{
+
+  background:#927fff;
+  color:white !important;
+
+}
+
+/* ================= COMPANY WISE ================= */
+
+.disabled-link{
+
+  color:#8d96ac;
+  cursor:not-allowed;
+  position:relative;
+
+}
+
+.coming-soon{
+
+  position:absolute;
+  top:-18px;
+  left:0;
+
+  font-size:10px;
+  color:#7b6cff;
+  font-weight:700;
+
+}
+
+/* ================= PROFILE ================= */
+
+.profile-container{
+    position:relative;
+    flex-shrink:0;
+}
+
+.profile-btn{
+
+  width:45px;
+  height:45px;
+
+  border:none;
+  border-radius:50%;
+
+  background:#7b6cff;
+  color:white;
+
+  cursor:pointer;
+
+  font-size:20px;
+
+  transition:.3s;
+
+}
+
+.profile-btn:hover{
+
+  background:#927fff;
+  transform:scale(1.05);
+
+}
+
+/* ================= DROPDOWN ================= */
+
+.profile-dropdown{
+    position: absolute;
+    top: 60px;
+    right: 0;
+
+    width: 280px;
+    min-width: 280px;
+    max-width: 280px;
+
+    background: #111827;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+
+    padding: 18px;
+
+    box-shadow: 0 15px 35px rgba(0,0,0,.35);
+
+    z-index: 9999;
+
+    overflow: hidden;
+}
+
+@keyframes dropdown{
+
+  from{
+
+    opacity:0;
+    transform:translateY(-10px);
+
+  }
+
+  to{
+
+    opacity:1;
+    transform:translateY(0);
+
+  }
+
+}
+
+.profile-dropdown h4{
+    margin:0;
+    color:white;
+    font-size:22px;
+    font-weight:700;
+
+    white-space:normal;
+    word-break:break-word;
+}
+
+.profile-dropdown p{
+    margin:8px 0 15px;
+
+    color:#a8b2c6;
+
+    font-size:14px;
+
+    white-space:normal;
+
+    word-break:break-word;
+
+    overflow-wrap:anywhere;
+}
+
+.profile-dropdown hr{
+
+  border:none;
+  border-top:1px solid rgba(255,255,255,.08);
+  margin:12px 0;
+
+}
+
+.profile-dropdown a{
+
+  display:block;
+  padding:10px 0;
+
+  color:white;
+
+  text-decoration:none;
+
+}
+
+.profile-dropdown a:hover{
+
+  color:#7b6cff;
+
+}
+
+.logout-menu-btn{
+
+  width:100%;
+
+  margin-top:12px;
+
+  padding:12px;
+
+  border:none;
+
+  border-radius:8px;
+
+  background:#ef4444;
+
+  color:white;
+
+  cursor:pointer;
+
+  transition:.3s;
+
+}
+
+.logout-menu-btn:hover{
+
+  background:#dc2626;
+
+}
+
+/* ================= HAMBURGER ================= */
+
+.hamburger{
+
+  display:none;
+
+  color:white;
+
+  font-size:28px;
+
+  cursor:pointer;
+
+}
+
+/* ================= TABLET ================= */
+
+@media(max-width:900px){
+
+.navbar{
+
+padding:18px 25px;
+
+}
+
+.logo a{
+
+font-size:26px;
+
+}
+
+.nav-right{
+
+gap:20px;
+
+}
+
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+.hamburger{
+
+display:block;
+
+z-index:1100;
+
+}
+
+.nav-right{
+
+position:absolute;
+
+top:78px;
+
+left:0;
+
+width:100%;
+
+background:#081026;
+
+display:none;
+
+flex-direction:column;
+
+align-items:center;
+
+gap:25px;
+
+padding:25px 0;
+
+border-top:1px solid rgba(255,255,255,.08);
+
+box-shadow:0 15px 25px rgba(0,0,0,.25);
+
+}
+
+.nav-right.active{
+
+display:flex;
+
+animation:slideDown .35s ease;
+
+}
+
+@keyframes slideDown{
+
+from{
+
+opacity:0;
+
+transform:translateY(-20px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.nav-right li{
+
+width:100%;
+
+text-align:center;
+
+}
+
+.nav-right a{
+
+display:block;
+
+padding:10px 0;
+
+font-size:17px;
+
+}
+
+.profile-dropdown{
+
+position:static;
+
+width:90%;
+
+margin:15px auto 0;
+
+}
+
+.coming-soon{
+
+display:none;
+
+}
+
+}
+
+/* ================= SMALL PHONES ================= */
+
+@media(max-width:480px){
+
+.navbar{
+
+padding:15px;
+
+}
+
+.logo a{
+
+font-size:22px;
+
+}
+
+.profile-btn{
+
+width:40px;
+
+height:40px;
+
+}
+
+}
