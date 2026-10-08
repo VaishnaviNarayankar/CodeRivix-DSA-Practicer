@@ -1,0 +1,15 @@
+com\coderivix\backend\dto\RegisterRequest.class
+com\coderivix\backend\config\SecurityConfig.class
+com\coderivix\backend\controller\UserController.class
+com\coderivix\backend\dto\UpdateProfileRequest.class
+com\coderivix\backend\BackendApplication.class
+com\coderivix\backend\config\PasswordConfig.class
+com\coderivix\backend\dto\ProfileResponse.class
+com\coderivix\backend\repository\UserRepository.class
+com\coderivix\backend\service\UserService.class
+com\coderivix\backend\dto\AuthResponse.class
+com\coderivix\backend\dto\LoginRequest.class
+com\coderivix\backend\security\JwtService.class
+com\coderivix\backend\controller\AuthController.class
+com\coderivix\backend\entity\User.class
+com\coderivix\backend\security\JwtAuthenticationFilter.class

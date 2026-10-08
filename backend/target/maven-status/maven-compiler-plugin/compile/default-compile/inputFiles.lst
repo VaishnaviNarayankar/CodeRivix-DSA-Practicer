@@ -1,0 +1,15 @@
+C:\Users\Maruti G Narayankar\Downloads\coderivix\backend\src\main\java\com\coderivix\backend\BackendApplication.java
+C:\Users\Maruti G Narayankar\Downloads\coderivix\backend\src\main\java\com\coderivix\backend\config\PasswordConfig.java
+C:\Users\Maruti G Narayankar\Downloads\coderivix\backend\src\main\java\com\coderivix\backend\config\SecurityConfig.java
+C:\Users\Maruti G Narayankar\Downloads\coderivix\backend\src\main\java\com\coderivix\backend\controller\AuthController.java
+C:\Users\Maruti G Narayankar\Downloads\coderivix\backend\src\main\java\com\coderivix\backend\controller\UserController.java
+C:\Users\Maruti G Narayankar\Downloads\coderivix\backend\src\main\java\com\coderivix\backend\dto\AuthResponse.java
+C:\Users\Maruti G Narayankar\Downloads\coderivix\backend\src\main\java\com\coderivix\backend\dto\LoginRequest.java
+C:\Users\Maruti G Narayankar\Downloads\coderivix\backend\src\main\java\com\coderivix\backend\dto\ProfileResponse.java
+C:\Users\Maruti G Narayankar\Downloads\coderivix\backend\src\main\java\com\coderivix\backend\dto\RegisterRequest.java
+C:\Users\Maruti G Narayankar\Downloads\coderivix\backend\src\main\java\com\coderivix\backend\dto\UpdateProfileRequest.java
+C:\Users\Maruti G Narayankar\Downloads\coderivix\backend\src\main\java\com\coderivix\backend\entity\User.java
+C:\Users\Maruti G Narayankar\Downloads\coderivix\backend\src\main\java\com\coderivix\backend\repository\UserRepository.java
+C:\Users\Maruti G Narayankar\Downloads\coderivix\backend\src\main\java\com\coderivix\backend\security\JwtAuthenticationFilter.java
+C:\Users\Maruti G Narayankar\Downloads\coderivix\backend\src\main\java\com\coderivix\backend\security\JwtService.java
+C:\Users\Maruti G Narayankar\Downloads\coderivix\backend\src\main\java\com\coderivix\backend\service\UserService.java
